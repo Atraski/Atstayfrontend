@@ -140,6 +140,79 @@ import slider100 from '../images/slider100.webp';
 
 
 
+import atstay11 from '../images/bhim.jpg'
+ import bhim1 from '../images/bhim1.jpg'
+ import bhim2 from '../images/bhim2.jpg'
+ import Shangri from '../images/Shangri.jpg'
+ import Shangri2 from '../images/Shangri2.jpg'
+ import Shangri3 from '../images/Shangri3.jpg'
+ import Mowgli from '../images/Mowgli.jpg'
+ import Mowgli2 from '../images/Mowgli2.jpg'
+ import Mowgli3 from '../images/Mowgli3.jpg'
+ import Stonewood from '../images/Stonewood.jpg'
+ import Stonewood2 from '../images/Stonewood2.jpg'
+ import Stonewood3 from '../images/Stonewood3.jpg'
+ import Shimla from '../images/Shimla.jpg'
+ import Shimla2 from '../images/Shimla2.jpg'
+ import Shimla3 from '../images/Shimla3.jpg'
+ import city from '../images/city.jpg'
+ import city2 from '../images/city2.jpg'
+ import city3 from '../images/city3.jpg'
+ import Royce from '../images/Royce.png'
+ import Royce2 from '../images/Royce2.png'
+ import Royce3 from '../images/Royce3.jpg'
+ import Pushkar from '../images/Pushkar.jpg'
+ import Pushkar2 from '../images/Pushkar2.jpg'
+ import Pushkar3 from '../images/Pushkar3.jpg'
+ import Hive from '../images/Hive.jpg'
+ import Hive2 from '../images/Hive2.jpg'
+ import Hive3 from '../images/Hive3.jpg'
+ import Kappu from '../images/Kappu.jpg'
+ import Kappu2 from '../images/Kappu2.jpg'
+ import Kappu3 from '../images/Kappu3.jpg'
+ import Himri from '../images/Himri.jpg'
+ import Himri2 from '../images/Himri2.jpg'
+ import Himri3 from '../images/Himri3.jpg'
+ import Sunbreeze from '../images/Sunbreeze.jpg'
+ import Sunbreeze2 from '../images/Sunbreeze2.jpg'
+ import Sunbreeze3 from '../images/Sunbreeze3.jpg'
+ import Sunbeam from '../images/Sunbeam.jpg'
+ import Sunbeam2 from '../images/Sunbeam2.jpg'
+ import Sunbeam3 from '../images/Sunbeam3.jpg'
+ import Cedarwood from '../images/Cedarwood.jpg'
+ import Cedarwood2 from '../images/Cedarwood2.jpg'
+ import Cedarwood3 from '../images/Cedarwood3.jpg'
+ import Jakhoo from '../images/Jakhoo.jpg'
+ import Jakhoo2 from '../images/Jakhoo2.jpg'
+ import Jakhoo3 from '../images/Jakhoo3.jpg'
+ import Escape from '../images/Escape.jpeg'
+ import Escape2 from '../images/Escape2.jpeg'
+ import Escape3 from '../images/Escape3.jpeg'
+ import KANAK from '../images/KANAK.jpg'
+ import KANAK2 from '../images/KANAK3.jpg'
+ import KANAK3 from '../images/KANAK3.jpg'
+ import Pushpanjali from '../images/Pushpanjali.jpg'
+ import Pushpanjali3 from '../images/Pushpanjali2.jpg'
+ import Pushpanjali2 from '../images/Pushpanjali3.jpg'
+ import Ramda from '../images/Ramda.jpg'
+ import Ramda2 from '../images/Ramda2.jpg'
+ import Ramda3 from '../images/Ramda3.jpg'
+ import Kasar from '../images/Kasar.jpg'
+ import Kasar2 from '../images/Kasar2.jpg'
+ import Kasar3 from '../images/Kasar3.jpg'
+ import Binsar from '../images/Binsar.jpg'
+ import Binsar2 from '../images/Binsar2.jpg'
+ import Binsar3 from '../images/Binsar3.jpg'
+ import BBC from '../images/BBC.jpg'
+ import BBC2 from '../images/BBC2.jpg'
+ import BBC3 from '../images/BBC3.jpg'
+ import MMM from '../images/MMM.jpg'
+ import MMM2 from '../images/MMM2.jpg'
+ import MMM3 from '../images/MMM3.jpg'
+
+
+
+
 
 
 
@@ -397,6 +470,310 @@ export const productData1=[
            
         
     },
+
+
+    { id: 11
+        ,
+        room1:[
+            { imgs:atstay11,roomtype:'ATSTAY Bhimkothi Boutique 1011',id:36,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 12
+        ,
+        room1:[
+            { imgs:Shangri,roomtype:'ATSTAY Shangri-La The Heritage Haveli 1012',id:37,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 13
+        ,
+        room1:[
+            { imgs:Mowgli,roomtype:'ATSTAY Mowgli Town Homestay 1013',id:38,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 14
+        ,
+        room1:[
+            { imgs:Stonewood,roomtype:'ATSTAY Stonewood Homestay 1014',id:39,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 15
+        ,
+        room1:[
+            { imgs:Shimla,roomtype:'ATSTAY Shimla Hills Homestay Kamal 1015',id:40,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 16
+        ,
+        room1:[
+            { imgs:city,roomtype:'ATSTAY The City Escape Farmstay 1016',id:41,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 17
+        ,
+        room1:[
+            { imgs:Royce,roomtype:'ATSTAY Royce Villa Nainital 1017',id:42,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 18
+        ,
+        room1:[
+            { imgs:Pushkar,roomtype:'ATSTAY The Hive Pushkar 1018',id:43,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 19
+        ,
+        room1:[
+            { imgs:Hive,roomtype:'ATSTAY The Hive Jaipur 1019',id:44,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 20
+        ,
+        room1:[
+            { imgs:Kappu,roomtype:'ATSTAY Kappu Home Stay 1020',id:45,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 21
+        ,
+        room1:[
+            { imgs:Himri,roomtype:'ATSTAY Himri Mountains Home Stay 1021',id:46,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 22
+        ,
+        room1:[
+            { imgs:Sunbreeze,roomtype:'ATSTAY Sunbreeze shimla 1022',id:47,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 23
+        ,
+        room1:[
+            { imgs:Sunbeam,roomtype:'ATSTAY Sunbeam 3bhk apartment 1023',id:48,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 24
+        ,
+        room1:[
+            { imgs:Cedarwood,roomtype:'ATSTAY Cedarwood villa 1024',id:49,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 25
+        ,
+        room1:[
+            { imgs:Jakhoo,roomtype:'ATSTAY Jakhoo nest 1025',id:50,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 26
+        ,
+        room1:[
+            { imgs:Escape,roomtype:'ATSTAY Escape Town Homestay 1026',id:51,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+
+    { id: 27
+        ,
+        room1:[
+            { imgs:KANAK,roomtype:'ATSTAY KANAK HOMESTAY 1027',id:52,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 28
+        ,
+        room1:[
+            { imgs:Pushpanjali,roomtype:'ATSTAY Pushpanjali Homestay 1028',id:53,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 29
+        ,
+        room1:[
+            { imgs:Ramda,roomtype:'ATSTAY Ramda Guest House 1029',id:54,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 30
+        ,
+        room1:[
+            { imgs:Kasar,roomtype:'ATSTAY Kasar Himalaya holiday home 1030',id:55,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 31
+        ,
+        room1:[
+            { imgs:Binsar,roomtype:'ATSTAY Binsar view home stay 1031',id:56,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 32
+        ,
+        room1:[
+            { imgs:Jakhoo,roomtype:'ATSTAY Oxygen HomeStay 1032',id:57,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 33
+        ,
+        room1:[
+            { imgs:Jakhoo,roomtype:'ATSTAY The Bougainvillea - Luxury Homestay in Dehradun 1033',id:58,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 34
+        ,
+        room1:[
+            { imgs:BBC,roomtype:'ATSTAY BBC Homestays Dehradun 1034',id:59,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 35
+        ,
+        room1:[
+            { imgs:Jakhoo,roomtype:'ATSTAY Jhinuk Homestay 1035',id:60,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    { id: 36
+        ,
+        room1:[
+            { imgs:MMM,roomtype:'ATSTAY MMM Home Rentals 1036',id:61,price:4200},
+             
+        ],
+       
+           
+        
+    },
+
+    
+
+    
+
+
     
 
 ]
@@ -883,17 +1260,7 @@ export const productData4=[
         id:21,
         // img:page1img2,
         images:[{
-            image1:slider40},
-           
-
-
-
-
-        
-        
-          
-
-          
+            image1:slider40}, 
         ]
         
     },
@@ -1253,29 +1620,316 @@ export const productData4=[
             { image1:slider98},
             { image1:slider99},
             { image1:slider100},
-
-           
-
-
-
-          ,
-
-
-           
-
-
-
-
-        
-        
           
-
-          
+  
         ]
-
-        
-        
+  
     },
+    
+
+
+    {
+        id:36,
+        // img:page1img2,
+        images:[{ image1:atstay11},
+            { image1:bhim1},
+            { image1:bhim2},
+        ]        
+    },
+    
+
+    {
+        id:37,
+        // img:page1img2,
+        images:[{ image1:Shangri},
+            { image1:Shangri2},
+            { image1:Shangri3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:38,
+        // img:page1img2,
+        images:[{ image1:Mowgli},
+            { image1:Mowgli2},
+            { image1:Mowgli3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:39,
+        // img:page1img2,
+        images:[{ image1:Stonewood},
+            { image1:Stonewood2},
+            { image1:Stonewood3},
+        ]        
+    },
+    
+
+    {
+        id:40,
+        // img:page1img2,
+        images:[{ image1:Shimla},
+            { image1:Shimla2},
+            { image1:Shimla3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:41,
+        // img:page1img2,
+        images:[{ image1:city},
+            { image1:city2},
+            { image1:city3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:42,
+        // img:page1img2,
+        images:[{ image1:Royce},
+            { image1:Royce2},
+            { image1:Royce3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:43,
+        // img:page1img2,
+        images:[{ image1:Pushkar},
+            { image1:Pushkar2},
+            { image1:Pushkar3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:44,
+        // img:page1img2,
+        images:[{ image1:Hive},
+            { image1:Hive2},
+            { image1:Hive3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:45,
+        // img:page1img2,
+        images:[{ image1:Kappu},
+            { image1:Kappu2},
+            { image1:Kappu3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:46,
+        // img:page1img2,
+        images:[{ image1:Himri},
+            { image1:Himri2},
+            { image1:Himri3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:47,
+        // img:page1img2,
+        images:[{ image1:Sunbreeze},
+            { image1:Sunbreeze2},
+            { image1:Sunbreeze3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:48,
+        // img:page1img2,
+        images:[{ image1:Sunbeam},
+            { image1:Sunbeam2},
+            { image1:Sunbeam3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:49,
+        // img:page1img2,
+        images:[{ image1:Cedarwood},
+            { image1:Cedarwood2},
+            { image1:Cedarwood3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:50,
+        // img:page1img2,
+        images:[{ image1:Jakhoo},
+            { image1:Jakhoo2},
+            { image1:Jakhoo3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:51,
+        // img:page1img2,
+        images:[{ image1:Escape},
+            { image1:Escape2},
+            { image1:Escape3},
+            
+
+        ]        
+    },
+    
+
+    {
+        id:52,
+        // img:page1img2,
+        images:[{ image1:KANAK},
+            { image1:KANAK2},
+            { image1:KANAK3},
+            
+
+        ]        
+    },
+
+
+    {
+        id:53,
+        // img:page1img2,
+        images:[{ image1:Pushpanjali},
+            { image1:Pushpanjali2},
+            { image1:Pushpanjali3},
+            
+
+        ]        
+    },
+
+
+    {
+        id:54,
+        // img:page1img2,
+        images:[{ image1:Ramda},
+            { image1:Ramda2},
+            { image1:Ramda3},
+            
+
+        ]        
+    },
+
+
+    {
+        id:55,
+        // img:page1img2,
+        images:[{ image1:Kasar},
+            { image1:Kasar2},
+            { image1:Kasar3},
+            
+
+        ]        
+    },
+
+    {
+        id:56,
+        // img:page1img2,
+        images:[{ image1:Binsar},
+            { image1:Binsar2},
+            { image1:Binsar3},
+            
+
+        ]        
+    },
+
+    {
+        id:57,
+        // img:page1img2,
+        images:[{ image1:KANAK},
+            { image1:KANAK2},
+            { image1:KANAK3},
+            
+
+        ]        
+    },
+
+    {
+        id:58,
+        // img:page1img2,
+        images:[{ image1:KANAK},
+            { image1:KANAK2},
+            { image1:KANAK3},
+            
+
+        ]        
+    },
+
+    {
+        id:59,
+        // img:page1img2,
+        images:[{ image1:BBC},
+            { image1:BBC2},
+            { image1:BBC3},
+            
+
+        ]        
+    },
+
+    {
+        id:60,
+        // img:page1img2,
+        images:[{ image1:BBC},
+            { image1:BBC2},
+            { image1:BBC3},
+            
+
+        ]        
+    },
+
+    {
+        id:61,
+        // img:page1img2,
+        images:[{ image1:MMM},
+            { image1:MMM2},
+            { image1:MMM3},
+            
+
+        ]        
+    },
+
+
     
 
 
