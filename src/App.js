@@ -17,6 +17,7 @@ import CartDetailsPage2 from "./components/CartDetailsPage2";
 import Attournext from "./components/Attournext";
 import Form from "./components/Form";
 import Form2 from "./components/Form2";
+import Invoice from "./components/Invoice.js";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/cart/:id" element={<CartDetailsPage2 />}></Route>
         <Route path="/form" element={<Form />}></Route>
         <Route path="/forms" element={<Form2 />}></Route>
+  <Route path="/invoice" element={<Invoice />}></Route>
 
 
 
