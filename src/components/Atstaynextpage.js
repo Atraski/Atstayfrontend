@@ -18,8 +18,9 @@ import { DatePicker } from 'antd';
 import { Link } from 'react-router-dom';
 const { Rangepicker } = DatePicker
 
-function AccordionItem({ title }) {
+function AccordionItem({  }) {
   const [isOpen, setIsOpen] = useState(false);
+ 
 
 
 
@@ -74,7 +75,12 @@ function Atstaynextpage() {
   const [numss, setnumss] = useState(() => (localStorage.getItem('child')) || 0);
   const [nums, setnums] = useState(() => (localStorage.getItem('adult')) || 0);
   const [num, setnum] = useState(() => (localStorage.getItem('room')) || 0);
-  const [numberOfDays, setNumberOfDays] = useState(0);
+  const [numberOfDays, setNumberOfDays] = useState(0); 
+  const [r1, setr1] = useState();  
+  const [r2, setr2] = useState();  
+  const [r3, setr3] = useState();  
+ 
+                
 
 
   useEffect(() => {
@@ -109,6 +115,10 @@ function Atstaynextpage() {
   const mm1 = data.filter((ds) => ds.id == params.id)
   const mm2 = dd1.filter((ds1) => ds1.id == params.id)
   const mm3 = faci.filter((ds2) => ds2.id == params.id)
+  const tripValue =  mm1[0].trip ;
+  const [storedData ,setstoreddata] = useState();
+  console.log(storedData);
+
   useEffect(() => {
     localStorage.setItem('productData', JSON.stringify(data));
     localStorage.setItem('productData1', JSON.stringify(dd1));
@@ -118,14 +128,99 @@ function Atstaynextpage() {
     localStorage.setItem('child', numss);
     localStorage.setItem('adult', nums);
     localStorage.setItem('room', num);
+    localStorage.setItem('trip', tripValue);
 
-  }, [data, dd1, faci, checkout, checkin, numss, nums, num]);
+  }, [data, dd1, faci, checkout, checkin, numss, nums, num,tripValue]);
+
+const dataa =localStorage.getItem('valuee')
+const dataa1 =localStorage.getItem('valuee1')
+
+const dataa2 =localStorage.getItem('valuee2')
+
+
+  const [updatedRooms, setUpdatedRooms] = useState() 
+  const[s,setss] =useState(dataa,dataa1,dataa2)
+
+
+  console.log(updatedRooms)
+    // const [updatedRoomPrice, setUpdatedRoomPrice] = useState(() => localStorage.getItem('updatedRoomPrice') || '');
+
+    
+
+    useEffect(() => {
+      fetchDataFromServer()
+      setDatass(jsondata);
+
+          
+    },[r1, r2, r3]);
+
+    
+
+    const fetchDataFromServer = async () => {
+      try {
+          const response = await fetch(`http://localhost:5000/api/rooms/${params.id}`);
+          const data = await response.json();
+          console.log(data, "mmm");
+
+          // const allRoomNumbers = data.rooms?.reduce((acc, room) => {
+          //   // Concatenate roomno1, roomno2, and roomno3 to the accumulator array
+          //   return acc.concat(room.roomno1, room.roomno2, room.roomno3);
+          // }, []) || [];
+
+          // setDatass(allRoomNumbers);
+
+
+          // setUpdatedRooms(data.rooms || 2);
+          setr1(data.roomno1 ||2);
+          setr2(data.roomno2 ||2);
+          setr3(data.roomno3 ||2);
+
+          console.log(r1 , r2 ,r3)
 
 
 
+          
+
+          // setRoomprice(data.roomprice || '');
+      } catch (error) {
+          console.error('Error fetching data from server:', error);
+      }
+
+  };
+
+  const jsondata = [
+    {
+      "id" : 1,
+      "room" : r1,
+      
+    },
+  
+    {
+      "id" : 2,
+      "room" : r2,
+    },
+    
+    {
+      "id" : 3,
+      "room" : r3,
+    },
+  ]
+
+  
+  console.log(r1 , r2 ,r3)
+  const [datass , setDatass] = useState(jsondata);
+
+
+  
 
 
 
+  
+  
+
+
+    
+    
 
 
 
@@ -134,15 +229,39 @@ function Atstaynextpage() {
   }
 
   const inc = () => {
-    setnum(parseInt(num) + 1);
+    console.log(num)
+
+    console.log(updatedRooms)
+    
+      if(num<updatedRooms){
+        setnum( parseInt(num) + 1);
+        console.log(num)
+      }
+      else{
+        alert("Oops Rooms is not Available")
+      }
+    
+    
+    
+    
+    
   };
   
   const inc1 = () => {
-    setnums(parseInt(nums) + 1);
+    if(nums < num*2){
+      setnums(parseInt(nums) + 1);
+    }
+    else{
+      alert("No More Adults Are Allowed")
+    }
+    
   };
   
   const inc2 = () => {
-    setnumss(parseInt(numss) + 1);
+    if(numss < 1){
+      setnumss(parseInt(numss) + 1);
+    }
+    
   };
   
   const dec = () => {
@@ -218,6 +337,17 @@ function Atstaynextpage() {
   }
 
   const showprice = () => {
+
+    if(num>updatedRooms){
+      alert(`Only ${updatedRooms} is Available`)
+    }
+
+    else{
+      const box = document.querySelector('.hideing');
+    if(window.innerWidth <= 974){
+      box.style.setProperty('display', 'none', 'important');
+    }
+    
     const scrollY = 1200; // Adjust this value as needed
 
     // Scroll to the specified Y-coordinate
@@ -225,10 +355,16 @@ function Atstaynextpage() {
       top: scrollY,
       behavior: 'smooth', // You can use 'auto' for an instant scroll
     });
+    }
+
+    
+
+    
 
     // const price = document.querySelector('.nightprice')
     // price.style.setProperty('display','block','important')
   }
+  // Assuming `room` is part of the props
 
 
 
@@ -250,6 +386,7 @@ function Atstaynextpage() {
                   </div>
                   <div class="carousel-item">
                     <img src={ele.img3} class="d-block" alt="..." />
+
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -324,36 +461,56 @@ function Atstaynextpage() {
                   <div></div>
                 </div>
               </div>
-              {mm2.map((eles) => {
+              
+              {mm2.map((eles , i) => {
+                const roomData =eles.room1.length;
                 {
                   return (
-                    <div style={{ width: "90%", padding: "2px" }}>
-                      <h1> Rooms</h1>
+
+                    <div style={{ width: "90%", padding: "2px" }} key={i}>
+                      <h1>Rooms</h1>
+                      
+                          
+                       
                       {eles.room1.map((room, i) => (
+                          // const room1Length = room.room.length
 
 
-                        <div className="direct" style={{ display: "flex", border: "0.1px solid #d0dbdb", justifyContent: "space-between", padding: "0", margin: "0" }}>
+                        <div key={i} className="direct" style={{ display: "flex", border: "0.1px solid #d0dbdb", justifyContent: "space-between", padding: "0", margin: "0" }}>
                           <div className="fixsize">
-                            <Link to={`/rooms/${room.id}`}> <img src={room.imgs} style={{ height: "200px", padding: "0", margin: "0" }}></img></Link>
+                            <Link to={`/rooms/${room.id}?roomValue=${localStorage.getItem(`valuee${i}`)}`}> <img src={room.imgs} style={{ height: "200px", padding: "0", margin: "0" }}></img></Link>
                           </div>
                           <div className="mt-2 " style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}> <h5 className='ms-2'> {room.roomtype}</h5>
+                           
                             <div style={{ display: "flex" }}>
                               <i class="fa-solid fa-bed  fs-4 mt-2 mx-3"></i>        <i class="fa-solid fa-people-arrows fs-4 mt-2 mx-3"></i>
                               <i class="fa-solid fa-child fs-4 mt-2 mx-3"></i>
 
-
-
-
                             </div>
+             
+                            {datass.map((items, i) => {
+  if (items.id === room.js) {
+    // Assuming 'i' is the index of the iteration
+    localStorage.setItem(`valuee${i}`, items.room);
+    return <p key={i}>{items.room}</p>;
+  }
+  return null; // If the condition is not met, you can return null or an empty fragment
+})}
 
+    </div>
+  
+                      
+ 
 
-                          </div>
-
-                          <div style={{ display: "flex", justifyContent: 'center', alignItems: "center", flexDirection: 'column' }}><Link to={`/rooms/${room.id}`}><button className='btn btn-large btn-danger mt-4 me-3' >Show more</button></Link></div>
+                          
+                          <div style={{ display: "flex", justifyContent: 'center', alignItems: "center", flexDirection: 'column' }}><Link to={`/rooms/${room.id}?roomValue=${localStorage.getItem(`valuee${i}`)}`}><button className='btn btn-large btn-danger mt-4 me-3' >Show more</button></Link></div>
                           {/* <span className="nightprice" style={{fontSize:'15px' , fontFamily:'cursive',fontWeight:'800' , display:'none' }}>{room.price[i] * numberofdays}/ {numberofdays} night</span> */}
 
                         </div>
                       ))}
+                      
+                  
+                  
 
                     </div>
                   )
@@ -414,7 +571,7 @@ function Atstaynextpage() {
             mm1.map((ele) => {
               return (
                 <>
-                  <p style={{ fontSize: '25px' }} className="mx-5"><span style={{ fontSize: '19px' }}>from ₹, </span>{ele.price}</p>
+                  <p style={{ fontSize: '25px' }} className="mx-2 msx"><span style={{ fontSize: '19px' }}>from ₹, </span>{ele.price}</p>
                 </>
               )
             })
@@ -424,7 +581,7 @@ function Atstaynextpage() {
         <div className="booking">
           <button className="btn btn-primary mx-5" style={{ width: '200px' }} onClick={showbox}>Book Now</button>
         </div>
-      </div>
+      </div> 
 
 
     </>
