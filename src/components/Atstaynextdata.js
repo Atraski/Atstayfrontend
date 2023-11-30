@@ -487,8 +487,11 @@ export const productData1=[
         ,
         room1:[
             { imgs:Shangri,roomtype:'ATSTAY Shangri-La The Heritage Haveli 1012',id:37,price:4200},
+           
              
         ],
+
+        
        
            
         
@@ -508,7 +511,8 @@ export const productData1=[
     { id: 14
         ,
         room1:[
-            { imgs:Stonewood,roomtype:'ATSTAY Stonewood Homestay 1014',id:39,price:4200},
+            { imgs:Stonewood,roomtype:'Deluxe Rooms',id:39,price:3080 , room:5,js:1},
+            { imgs:Stonewood,roomtype:'Family Suits Rooms',id:40,price:4681, room:10,js:2},
              
         ],
        
@@ -520,7 +524,7 @@ export const productData1=[
     { id: 15
         ,
         room1:[
-            { imgs:Shimla,roomtype:'ATSTAY Shimla Hills Homestay Kamal 1015',id:40,price:4200},
+            { imgs:Shimla,roomtype:'ATSTAY Shimla Hills Homestay Kamal 1015',id:41,price:4200},
              
         ],
        
@@ -531,7 +535,7 @@ export const productData1=[
     { id: 16
         ,
         room1:[
-            { imgs:city,roomtype:'ATSTAY The City Escape Farmstay 1016',id:41,price:4200},
+            { imgs:city,roomtype:'ATSTAY The City Escape Farmstay 1016',id:42,price:4200},
              
         ],
        
@@ -543,7 +547,9 @@ export const productData1=[
     { id: 17
         ,
         room1:[
-            { imgs:Royce,roomtype:'ATSTAY Royce Villa Nainital 1017',id:42,price:4200},
+            { imgs:Royce,roomtype:'STANDARD ROOMS',id:43,price:3942 , js:1},
+            { imgs:Royce,roomtype:'LAKE FACING ROOMS',id:44,price:5544,js:2},
+            { imgs:Royce,roomtype:'INTER CONNECTED ',id:45,price:7392,js:3},
              
         ],
        
@@ -555,7 +561,7 @@ export const productData1=[
     { id: 18
         ,
         room1:[
-            { imgs:Pushkar,roomtype:'ATSTAY The Hive Pushkar 1018',id:43,price:4200},
+            { imgs:Pushkar,roomtype:'ATSTAY The Hive Pushkar 1018',id:46,price:4200},
              
         ],
        
@@ -567,7 +573,7 @@ export const productData1=[
     { id: 19
         ,
         room1:[
-            { imgs:Hive,roomtype:'ATSTAY The Hive Jaipur 1019',id:44,price:4200},
+            { imgs:Hive,roomtype:'ATSTAY The Hive Jaipur 1019',id:47,price:4200},
              
         ],
        
@@ -579,7 +585,7 @@ export const productData1=[
     { id: 20
         ,
         room1:[
-            { imgs:Kappu,roomtype:'ATSTAY Kappu Home Stay 1020',id:45,price:4200},
+            { imgs:Kappu,roomtype:'ATSTAY Kappu Home Stay 1020',id:48,price:4200},
              
         ],
        
@@ -591,7 +597,7 @@ export const productData1=[
     { id: 21
         ,
         room1:[
-            { imgs:Himri,roomtype:'ATSTAY Himri Mountains Home Stay 1021',id:46,price:4200},
+            { imgs:Himri,roomtype:'ATSTAY Himri Mountains Home Stay 1021',id:49,price:4200},
              
         ],
        
@@ -603,7 +609,7 @@ export const productData1=[
     { id: 22
         ,
         room1:[
-            { imgs:Sunbreeze,roomtype:'ATSTAY Sunbreeze shimla 1022',id:47,price:4200},
+            { imgs:Sunbreeze,roomtype:'ATSTAY Sunbreeze shimla 1022',id:50,price:4200},
              
         ],
        
@@ -615,7 +621,7 @@ export const productData1=[
     { id: 23
         ,
         room1:[
-            { imgs:Sunbeam,roomtype:'ATSTAY Sunbeam 3bhk apartment 1023',id:48,price:4200},
+            { imgs:Sunbeam,roomtype:'ATSTAY Sunbeam 3bhk apartment 1023',id:51,price:4200},
              
         ],
        
@@ -627,7 +633,7 @@ export const productData1=[
     { id: 24
         ,
         room1:[
-            { imgs:Cedarwood,roomtype:'ATSTAY Cedarwood villa 1024',id:49,price:4200},
+            { imgs:Cedarwood,roomtype:'ATSTAY Cedarwood villa 1024',id:52,price:4200},
              
         ],
        
@@ -638,7 +644,7 @@ export const productData1=[
     { id: 25
         ,
         room1:[
-            { imgs:Jakhoo,roomtype:'ATSTAY Jakhoo nest 1025',id:50,price:4200},
+            { imgs:Jakhoo,roomtype:'ATSTAY Jakhoo nest 1025',id:53,price:4200},
              
         ],
        
@@ -650,7 +656,7 @@ export const productData1=[
     { id: 26
         ,
         room1:[
-            { imgs:Escape,roomtype:'ATSTAY Escape Town Homestay 1026',id:51,price:4200},
+            { imgs:Escape,roomtype:'ATSTAY Escape Town Homestay 1026',id:54,price:4200},
              
         ],
        
@@ -662,7 +668,7 @@ export const productData1=[
     { id: 27
         ,
         room1:[
-            { imgs:KANAK,roomtype:'ATSTAY KANAK HOMESTAY 1027',id:52,price:4200},
+            { imgs:KANAK,roomtype:'ATSTAY KANAK HOMESTAY 1027',id:55,price:4200},
              
         ],
        
@@ -673,7 +679,7 @@ export const productData1=[
     { id: 28
         ,
         room1:[
-            { imgs:Pushpanjali,roomtype:'ATSTAY Pushpanjali Homestay 1028',id:53,price:4200},
+            { imgs:Pushpanjali,roomtype:'ATSTAY Pushpanjali Homestay 1028',id:56,price:4200},
              
         ],
        
@@ -684,7 +690,7 @@ export const productData1=[
     { id: 29
         ,
         room1:[
-            { imgs:Ramda,roomtype:'ATSTAY Ramda Guest House 1029',id:54,price:4200},
+            { imgs:Ramda,roomtype:'ATSTAY Ramda Guest House 1029',id:57,price:4200},
              
         ],
        
@@ -695,7 +701,7 @@ export const productData1=[
     { id: 30
         ,
         room1:[
-            { imgs:Kasar,roomtype:'ATSTAY Kasar Himalaya holiday home 1030',id:55,price:4200},
+            { imgs:Kasar,roomtype:'ATSTAY Kasar Himalaya holiday home 1030',id:58,price:4200},
              
         ],
        
@@ -706,7 +712,7 @@ export const productData1=[
     { id: 31
         ,
         room1:[
-            { imgs:Binsar,roomtype:'ATSTAY Binsar view home stay 1031',id:56,price:4200},
+            { imgs:Binsar,roomtype:'ATSTAY Binsar view home stay 1031',id:59,price:4200},
              
         ],
        
@@ -717,7 +723,7 @@ export const productData1=[
     { id: 32
         ,
         room1:[
-            { imgs:Jakhoo,roomtype:'ATSTAY Oxygen HomeStay 1032',id:57,price:4200},
+            { imgs:Jakhoo,roomtype:'ATSTAY Oxygen HomeStay 1032',id:60,price:4200},
              
         ],
        
@@ -728,7 +734,7 @@ export const productData1=[
     { id: 33
         ,
         room1:[
-            { imgs:Jakhoo,roomtype:'ATSTAY The Bougainvillea - Luxury Homestay in Dehradun 1033',id:58,price:4200},
+            { imgs:Jakhoo,roomtype:'ATSTAY The Bougainvillea - Luxury Homestay in Dehradun 1033',id:61,price:4200},
              
         ],
        
@@ -739,7 +745,7 @@ export const productData1=[
     { id: 34
         ,
         room1:[
-            { imgs:BBC,roomtype:'ATSTAY BBC Homestays Dehradun 1034',id:59,price:4200},
+            { imgs:BBC,roomtype:'ATSTAY BBC Homestays Dehradun 1034',id:62,price:4200},
              
         ],
        
@@ -750,7 +756,7 @@ export const productData1=[
     { id: 35
         ,
         room1:[
-            { imgs:Jakhoo,roomtype:'ATSTAY Jhinuk Homestay 1035',id:60,price:4200},
+            { imgs:Jakhoo,roomtype:'ATSTAY Jhinuk Homestay 1035',id:63,price:4200},
              
         ],
        
@@ -761,7 +767,7 @@ export const productData1=[
     { id: 36
         ,
         room1:[
-            { imgs:MMM,roomtype:'ATSTAY MMM Home Rentals 1036',id:61,price:4200},
+            { imgs:MMM,roomtype:'ATSTAY MMM Home Rentals 1036',id:64,price:4200},
              
         ],
        
