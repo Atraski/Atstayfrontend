@@ -16,16 +16,22 @@ import { useNavigate , useParams , Link } from 'react-router-dom';
 import './room.css';
 
 import Footer from './Footer.js';
+import { useLocation } from 'react-router-dom';
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 
 function Rooms(){
   const params = useParams();
+  const location = useLocation();
+  const roomValue = new URLSearchParams(location.search).get('roomValue');
+  console.log(roomValue , "csc")
+  console.log(localStorage.getItem(`valuee0`))
 
 
   // const [nextmm , setNextmm] = useState(productData);
   // const mm4mm = next.filter((ds)=> ds.id == params.id)
 
     const [next , setNext] = useState(productData4);
+    const [Increment , setIncrement] = useState(roomValue)
     const mm4 = next.filter((ds)=> ds.id == params.id)
     console.log(mm4)
 
@@ -39,6 +45,10 @@ function Rooms(){
     const [nums,setnums] = useState(() => localStorage.getItem('adult'));
     const [num,setnum] = useState(() => localStorage.getItem('room'));
     const [numberOfDays, setNumberOfDays] = useState(0);
+    const [r1, setr1] = useState(0);
+    const [r2, setr2] = useState(0);
+    const [r3, setr3] = useState(0);
+
 
     useEffect(() => {
       const checkinDate = new Date(checkin);
@@ -80,13 +90,36 @@ function Rooms(){
       localStorage.setItem('child', numss);
       localStorage.setItem('adult', nums);
       localStorage.setItem('room', num);
+      fetchDataFromServer();
     }, [data, dd1, faci, checkout, checkin, numss, nums, num]);
   
   
     
   
-  
-  
+    const fetchDataFromServer = async () => {
+      try {
+          const response = await fetch(`http://localhost:5000/api/rooms/${params.id}`);
+          const data = await response.json();
+          console.log(data)
+
+          // setUpdatedRooms(data.rooms || 2);          
+          setr1(data.roomno1 || 2);
+          setr2(data.roomno2 || 2);
+          setr3(data.roomno3 || 2);
+          
+
+
+          // setRoomprice(data.roomprice || '');
+      } catch (error) {
+          console.error('Error fetching data from server:', error);
+      }
+
+  };
+
+  console.log(setr1,'sss')
+  console.log(setr2,'lll')
+  console.log(setr3,'sssss')
+
   
   
   
@@ -95,10 +128,21 @@ function Rooms(){
    }
   
     const inc=()=>{
-      setnum(num+1);
+      if(num<Increment){
+        setnum(parseInt(num+1));
+      }
+      else{
+        alert("Oops No More Rooms Available")
+      }
      }
      const inc1=()=>{
-       setnums(nums+1);
+      if(nums<num*2){
+        setnums(parseInt(nums+1));
+      }
+      else{
+        alert("No More Adults Are Allowed")
+      }
+       
       }
       const inc2=()=>{
        setnumss(numss+1);
@@ -140,6 +184,8 @@ function Rooms(){
       classss.classList.add('container')
       classss.classList.remove('container-fluid');
     }
+
+    
     return(
 
       
@@ -153,8 +199,8 @@ function Rooms(){
               nextm.images.map((ele , i)=>{
                 return(
                   
-      <Carousel.Item style={{ width:'100%', height:'100%'}}>
-        <img src={ele.image1} style={{ width:'100%' , height:'700px'}} />
+      <Carousel.Item style={{ width:'100%', height:'100%'}} className="mcm">
+        <img src={ele.image1} style={{ width:'100%' , height:'700px'}} className="mccm"/>
         <Carousel.Caption  >
           <h3>First slide label</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
