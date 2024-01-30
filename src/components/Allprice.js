@@ -102,7 +102,7 @@ export default function Allprice() {
                                 <th>Property Name</th>
                                 <th>Premium Rooms Price</th>
                                 <th>Normal Rooms Price</th>
-                                <th>Advance Rooms Price</th>
+                                <th>Advance Rooms Price </th>
                                 {/* <th>No Of Rooms Available</th> */}
                                 <th>No. of Premium</th>
                                 <th>No. of Normal</th>
